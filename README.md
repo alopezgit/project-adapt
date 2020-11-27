@@ -1,7 +1,7 @@
 # Project To Adapt
 In this repository you can find the official PyTorch implementation of [Project To Adapt](https://arxiv.org/abs/2008.01034) (ACCV20, Oral).
 ## Environment
-We tested the code using PyTorch 1.2 and Ubuntu 18.04. To download the extra required packages to run it, you can run `pip install -r requirements.txt`
+We tested the code using PyTorch 1.2 and Ubuntu 18.04. To download the extra required packages to run the code, you can use `pip install -r requirements.txt`
 
 ## Datasets
 We use two datasets in our code. In our project, we collect a synthetic dataset using CARLA 0.84. The synthetic data can be downloaded running the following code:
@@ -39,14 +39,14 @@ where the data path are by default `./Data/Carla` and `./Data/Kitti`, and the de
 ```
 train_2nd_step.sh [carla_data_path] [kitti_data_path] [batch_size]
 ```
-where in this case the default batch size is 2, which refers to 2 source dataset and 2 target dataset images, amounting to a total of 4 images per batch. In this second step, we load the model trained during the first step.
+where in this case the default batch size is 2. In this case batch size=2 refers to using 2 source dataset and 2 target dataset images, amounting to a total of 4 images per batch. In this second step, we load the model trained during the first step.
 
 ## Testing
 To evaluate your models, we use the oficial evaluation code from the Kitti devkit.
 ```
 ./Test/test.sh [save_name] [checkpoint_path] [online_test]
 ```
-The last argument, `[online_test]` is a boolean argument set to `False` by default. When set to `False` it runs the evaluation in the selected validation set (1000 images) where the ground-truth is publicly available, so you automatically obtain the RMSE, MAE and other error metrics. When set to `True`, it saves the predicted depth for the online test images where no ground-truth is given, so if you want to obtain the results for that you need to upload the predicted depth to the online KITTI test set.
+The last argument, `[online_test]` is a boolean argument set to `False` by default. When set to `False` it runs the evaluation in the selected validation set (1000 images) where the ground-truth is publicly available, so you automatically obtain the RMSE, MAE and other error metrics. When set to `True`, it saves the predicted depth for the online test images where no ground-truth is given. If you want to obtain the results for the online test set you need to upload the predicted depth to the [KITTI website](http://www.cvlibs.net/datasets/kitti/user_login.php).
 
 ## Citation
 If you use Project To Adapt for your research, you can cite the paper using the following Bibtex entry:
