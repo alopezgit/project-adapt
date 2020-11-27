@@ -33,11 +33,11 @@ You also need to download and extract in `Data/Kitti` the relevant KITTI data as
 ## Training
 We perform two steps of training as explained in the paper. To run the first training step, you can run:
 ```
-train_1st_step.sh [carla_data_path] [kitti_data_path] [batch_size]
+./train_1st_step.sh [carla_data_path] [kitti_data_path] [batch_size]
 ```
 where the data path are by default `./Data/Carla` and `./Data/Kitti`, and the default batch size is 4.
 ```
-train_2nd_step.sh [carla_data_path] [kitti_data_path] [batch_size]
+./train_2nd_step.sh [carla_data_path] [kitti_data_path] [batch_size]
 ```
 where in this case the default batch size is 2. In this case batch size=2 refers to using 2 source dataset and 2 target dataset images, amounting to a total of 4 images per batch. In this second step, we load the model trained during the first step.
 
