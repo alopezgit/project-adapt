@@ -1,0 +1,1 @@
+python train.py --save_name second_step_training_t --batch_size ${3-2} --n_training_iterations 40000 --train_target --load_path ./Saved/first_step_training/checkpoint_model_epoch_10.pth.tar --data_path_source ${1-./Data/Carla} --data_path_target ${2-./Data/Kitti}

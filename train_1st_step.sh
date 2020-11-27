@@ -1,0 +1,1 @@
+python train.py --save_name first_step_training --batch_size ${3-4} --nepochs 10 --data_path_source ${1-./Data/Carla} --data_path_target ${2-./Data/Kitti}
