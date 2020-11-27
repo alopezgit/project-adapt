@@ -1,5 +1,5 @@
 # Project To Adapt
-In this repository you can find the official PyTorch implementation of [Project To Adapt](https://arxiv.org/abs/2008.01034) (ACCV20, Oral).
+In this repository, you can find the official PyTorch implementation of [Project To Adapt](https://arxiv.org/abs/2008.01034) (ACCV20, Oral).
 ## Environment
 We tested the code using PyTorch 1.2 and Ubuntu 18.04. To download the extra required packages to run the code, you can use `pip install -r requirements.txt`
 
@@ -35,14 +35,14 @@ We perform two steps of training as explained in the paper. To run the first tra
 ```
 ./train_1st_step.sh [carla_data_path] [kitti_data_path] [batch_size]
 ```
-where the data path are by default `./Data/Carla` and `./Data/Kitti`, and the default batch size is 4.
+where the data paths are by default `./Data/Carla` and `./Data/Kitti`, and the default batch size is 4.
 ```
 ./train_2nd_step.sh [carla_data_path] [kitti_data_path] [batch_size]
 ```
-where in this case the default batch size is 2. In this case batch size=2 refers to using 2 source dataset and 2 target dataset images, amounting to a total of 4 images per batch. In this second step, we load the model trained during the first step.
+where, in this case, the default batch size is 2. For this setting, batch size=2 refers to using 2 source dataset and 2 target dataset images, amounting to a total of 4 images per batch. In this second step, we load the model trained during the first step.
 
 ## Testing
-To evaluate your models, we use the oficial evaluation code from the Kitti devkit.
+To evaluate your models, we use the official evaluation code from the Kitti devkit.
 ```
 ./Test/test.sh [save_name] [checkpoint_path] [online_test]
 ```
