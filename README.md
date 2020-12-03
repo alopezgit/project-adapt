@@ -1,5 +1,5 @@
 # Project To Adapt
-In this repository, you can find the official PyTorch implementation of [Project To Adapt](https://arxiv.org/abs/2008.01034) (ACCV20, Oral).
+In this repository, you can find the official PyTorch implementation of [Project To Adapt](https://openaccess.thecvf.com/content/ACCV2020/papers/Lopez-Rodriguez_Project_to_Adapt_Domain_Adaptation_for_Depth_Completion_from_Noisy_ACCV_2020_paper.pdf) (ACCV20, Oral).
 ## Environment
 We tested the code using PyTorch 1.2 and Ubuntu 18.04. To download the extra required packages to run the code, you can use `pip install -r requirements.txt`
 
