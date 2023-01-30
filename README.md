@@ -57,6 +57,15 @@ If you use Project To Adapt for your research, you can cite the paper using the 
   booktitle={Asian Conference on Computer Vision (ACCV)},
   year={2020}
 }
+
+@article{lopez2022project,
+  title={Project to Adapt: Domain Adaptation for Depth Completion from Noisy and Sparse Sensor Data},
+  author={Lopez-Rodriguez, Adrian and Busam, Benjamin and Mikolajczyk, Krystian},
+  journal={International Journal of Computer Vision},
+  pages={1--17},
+  year={2022},
+  publisher={Springer}
+}
 ```
 ## Acknowledgements
 We adapted the code from [FusionNet](https://github.com/wvangansbeke/Sparse-Depth-Completion).
